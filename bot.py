@@ -3,8 +3,11 @@ import json
 import telebot
 from telebot import types
 
-TOKEN = os.getenv("7587711984:AAGzQQ7t6X7tHqlkWgP_Ab3QO7z2W-K7Q4Q")
-bot = telebot.TeleBot(7587711984:AAGzQQ7t6X7tHqlkWgP_Ab3QO7z2W-K7Q4Q)
+import os
+from telebot import TeleBot, types
+
+TOKEN = os.getenv("TOKEN")
+bot = TeleBot(TOKEN)
 
 # Загружаем базу продуктов
 with open("products.json", "r", encoding="utf-8") as f:
